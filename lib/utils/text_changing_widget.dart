@@ -1,6 +1,7 @@
 import 'dart:async';
-import 'package:beckis_portfolio/constants/colors.dart';
+import 'package:beckis_portfolio/utils/widget_themes/text_changing.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class ChangingTextWidget extends StatefulWidget {
   @override
@@ -52,7 +53,12 @@ class _ChangingTextWidgetState extends State<ChangingTextWidget> {
   Widget build(BuildContext context) {
     return Text(
       " ${variations[wordIndex.toInt()].substring(0, letterIndex)}",
-      style: const TextStyle(color: bAccentColor, fontSize: 36),
+      style: getValueForScreenType<TextStyle>(
+        context: context,
+        mobile: BTextChangingTextStyle.mobileHeroTextStyle,
+        tablet: BTextChangingTextStyle.tabletHeroTextStyle,
+        desktop: BTextChangingTextStyle.desktopHeroTextStyle,
+      ),
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:beckis_portfolio/constants/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class SocialIcons extends StatelessWidget {
   const SocialIcons(
@@ -19,7 +20,11 @@ class SocialIcons extends StatelessWidget {
         onPressed: () => print(link),
         icon: Icon(
           icon,
-          size: 30,
+          size: getValueForScreenType<double>(
+            context: context,
+            mobile: 25,
+            desktop: 30,
+          ),
           color: bWhiteColor,
         ));
   }

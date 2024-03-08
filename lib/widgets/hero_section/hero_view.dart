@@ -1,18 +1,16 @@
-import 'package:beckis_portfolio/widgets/hero_contents/hero_about_me.dart';
-import 'package:beckis_portfolio/widgets/hero_contents/hero_right/hero_display_image.dart';
+import 'package:beckis_portfolio/widgets/hero_section/hero_content_desktop/hero_content_desktop.dart';
+import 'package:beckis_portfolio/widgets/hero_section/hero_content_mobile/hero_content_mobile.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class HeroView extends StatelessWidget {
   const HeroView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const SingleChildScrollView(
-      child: Expanded(
-        child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [HeroAbout(), HeroImage()]),
-      ),
+    return ScreenTypeLayout.builder(
+      mobile: (context) => const HeroContentMobile(),
+      desktop: (context) => const HeroContentDesktop(),
     );
   }
 }

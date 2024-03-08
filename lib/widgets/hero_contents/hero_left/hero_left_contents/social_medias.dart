@@ -1,15 +1,21 @@
 import 'package:beckis_portfolio/widgets/social_media/social_media_items.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class SocialLibrary extends StatelessWidget {
   const SocialLibrary({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
-      width: 325,
-      child: Row(
+    return SizedBox(
+      width: getValueForScreenType<double>(
+        context: context,
+        mobile: 275,
+        tablet: 300,
+        desktop: 325,
+      ),
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SocialIcons(
