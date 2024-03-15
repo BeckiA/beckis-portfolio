@@ -2,8 +2,8 @@ import 'package:beckis_portfolio/widgets/about_me_contents/about_left/about_prof
 import 'package:beckis_portfolio/widgets/about_me_contents/about_right/about_me_description.dart';
 import 'package:flutter/material.dart';
 
-class AboutMeWidget extends StatelessWidget {
-  const AboutMeWidget({super.key});
+class AboutDesktop extends StatelessWidget {
+  const AboutDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {

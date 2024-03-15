@@ -16,4 +16,4 @@ const zemenLogo = 'assets/images/company/zemen_logo.png';
 const meleketLogo = 'assets/images/company/meleket_logo.png';
 
 // Educational Background Image
-const education = 'assets/images/education/dtu_logo.png';
+const education = 'assets/images/education/dtu_logo.jpg';

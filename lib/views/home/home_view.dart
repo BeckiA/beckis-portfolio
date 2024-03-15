@@ -18,19 +18,29 @@ class HomeView extends StatelessWidget {
           mobile: const BNavigationDrawer(),
         ),
         backgroundColor: bPrimaryColor,
-        body: const SingleChildScrollView(
+        body: SingleChildScrollView(
           child: CenteredView(
             child: Column(
               children: [
-                BNavigationBar(),
+                const BNavigationBar(),
                 SizedBox(
-                  height: 60,
+                  height: getValueForScreenType<double>(
+                    context: context,
+                    desktop: 60,
+                    tablet: 35,
+                    mobile: 30,
+                  ),
                 ),
-                HeroView(),
+                const HeroView(),
                 SizedBox(
-                  height: 75,
+                  height: getValueForScreenType<double>(
+                    context: context,
+                    desktop: 50,
+                    tablet: 30,
+                    mobile: 0,
+                  ),
                 ),
-                AboutView(),
+                const AboutView(),
               ],
             ),
           ),
