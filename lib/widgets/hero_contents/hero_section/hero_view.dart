@@ -1,5 +1,5 @@
-import 'package:beckis_portfolio/widgets/hero_section/hero_content_desktop/hero_content_desktop.dart';
-import 'package:beckis_portfolio/widgets/hero_section/hero_content_mobile/hero_content_mobile.dart';
+import 'package:beckis_portfolio/widgets/hero_contents/hero_section/hero_content_desktop/hero_content_desktop.dart';
+import 'package:beckis_portfolio/widgets/hero_contents/hero_section/hero_content_mobile/hero_content_mobile.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 

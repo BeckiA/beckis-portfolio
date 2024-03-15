@@ -2,7 +2,7 @@ import 'package:beckis_portfolio/centered_view/centered_view.dart';
 import 'package:beckis_portfolio/constants/colors.dart';
 import 'package:beckis_portfolio/navigation_drawer/navigation_drawer.dart';
 import 'package:beckis_portfolio/widgets/about_me_contents/about_me_view.dart';
-import 'package:beckis_portfolio/widgets/hero_section/hero_view.dart';
+import 'package:beckis_portfolio/widgets/hero_contents/hero_section/hero_view.dart';
 import 'package:beckis_portfolio/widgets/navigation_bar/nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
